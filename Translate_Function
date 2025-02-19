@@ -1,0 +1,20 @@
+try:
+
+    def translate(phrase):
+        print("********************* ")
+        translate = ""
+        for letter in phrase:
+            if letter.lower() in "aeiou":
+                if letter.isupper:
+                    translate = translate + "G"
+                else:
+                    translate = translate + "g"
+        else:
+            translate = translate + letter
+        return translate
+
+
+    print(translate(input("Please enter your phrase: ")))
+
+except:
+    print("invalid")
